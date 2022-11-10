@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* 通用自定义样式 */
+  .banner {
+    @apply bg-white py-6 sm:py-8 lg:py-12;
+  }
+  .btn {
+    @apply border rounded-full border-primary px-5 text-primary hover:bg-primary hover:text-white;
+  }
+  .content {
+    @apply px-4 m-auto desktop:w-main desktop:px-0;
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Arial';
+    src: url('./fonts/ArialMT.ttf') format('woff');
+  }
+  @font-face {
+    font-family: 'Arial-BoldMT';
+    src: url('./fonts/Arial-BoldMT.otf');
+  }
+  @font-face {
+    font-family: 'DINOT-Medium';
+    src: url('./fonts/DINOT-Medium.otf') format('woff');
+  }
+}
